@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body{
+background-color:aqua}
+#box {color:green;
+border:7px solid blue;
+width:35%;
+border-radius: 14px;
+height:120px;
+margin:auto;
+text-align:center;
+font-weight:bold;
+text-shadow: 4px 4px 20px green;
+font-size: 160%;
+box-shadow:-5px -5px 5px red;
+}
+#search{margin:left;}
+</style>
+</head>
+<body>
+<div id='box'>
+<h1>boardlist를 출력합니다.</h1>
+</div>
+<div id='search'>
+<select name='exp'>
+			<option value='hwp' selected>제목</option>
+			<option value='doc'>내용</option>
+			<option value='txt' >작성자</option>
+		</select>
+<input type='text'>
+<input type='button' value='검색'>
+</div>
+</body>
+</html>

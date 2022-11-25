@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href='my.css' rel='stylesheet'>
+ <style type='text/css'>
+p{background-color:olive;}
+</style> 
+</head>
+<body>
+<h1>스타일 연습 페이지</h1>
+<p style='color: red'> 스타일 지정 방법을 연습합니다.(inline 방식) </p>
+<p style='color: red'> 스타일 지정 방법을 연습합니다. (내부파일 지정방식)</p>
+<p style='color: red'> 스타일 지정 방법을 연습합니다. (외부파일 지정방식)</p>
+</body>
+</html>

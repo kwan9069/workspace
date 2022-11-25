@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action='/html/b.jsp'>
+		<textarea cols='50' rows='5' name='memo'>
+여기에 메모를 작성하세요
+	</textarea>
+		<select name='exp'>
+			<option value='hwp'>한글</option>
+			<option value='doc'>워드</option>
+			<option value='txt'>메모장</option>
+			<option value='html'>html</option>
+		</select>
+		<input type='submit' value='전송'>
+	</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Welcome to Web Coffee!</h1>
+<br>
+<img src='./images/html5.jpg'>
+<p id='문단'>하우스 로스팅의 신선한 원두를 맛보고 싶다면 <i>공인 1급 바리스타</i>가 최고급 원두만을 직접 엄선하<br>여 사용합니다.</p>
+
+
+</body>
+</html>

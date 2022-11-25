@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+h1{
+color:red;
+background-color:green;
+width:200px;
+border:20px solid pink;w
+height:100px;
+margin:
+ auto;
+}
+
+img{
+border:2px solid pink;
+width:500px;
+height:500px;
+}
+</style>
+</head>
+<body>
+<h1>제목 1</h1>
+<img src='/html/images/html5.jpg'>
+</body>
+</html>

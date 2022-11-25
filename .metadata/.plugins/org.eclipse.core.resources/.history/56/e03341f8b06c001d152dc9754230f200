@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+#box {color:purple;
+border:3px solid black;
+width:550px;
+height:100%;
+margin:auto;
+text-align:center;
+}
+table,td,th{border:3px solid black;
+text-align: center;
+border-collapse: collapse;
+margin:auto;
+text-decoration:none; }
+.lefts{
+color:green;
+font-weight:bold;
+font-size:20px;
+margin: auto;}
+.left{color:green;
+margin: auto;
+font-size:20px;
+}
+.right{color:aqua;
+text-align:left;
+font-size:15px;
+}
+.fix {
+    background-color: orange;
+    color: black;
+    border: 3px solid black;
+display:inline-block;
+width:100px;
+background-color:orange
+;height:100px;}
+
+</style>
+</head>
+<body>
+<div id='box'>
+<h1>상세 게시물 화면</h1>
+<table>
+<tr><td class='lefts'>제목</td><td class='right'>제목1</td></tr>
+<tr><td class='lefts'>작성자</td><td class='right'>작성자1</td></tr>
+<tr><td class='lefts'>내용</td><td class='right'>1</td></tr>
+<tr><td class='left'>작성시간</td><td class='right'>2022년도2월4일</td></tr>
+<tr><td class='left'>조회수</td><td class='right'>1</td></tr>
+</table>
+<div class='fix'>
+<h1>수정버튼</h1>
+<h1>삭제버튼</h1>
+</div>
+</div>
+
+
+</body>
+</html>

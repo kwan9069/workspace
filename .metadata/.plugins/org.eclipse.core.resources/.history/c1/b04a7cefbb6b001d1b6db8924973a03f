@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1 id='first'>여러가지 태그 연습</h1>
+<!-- 2행 3열| -->
+<table border='3'>
+<caption>표연습</caption>
+<tr><th>1행제목</th><th>2행제목</th><th>3행제목</th></tr>
+<tr><td>1행1열</td><td>1행2열</td><td>1행3열</td></tr>
+<tr><td>2행1열</td><td>2행2열</td><td>2행3열</td></tr>
+
+</table>
+<!-- 상품구성표 -->
+<h2>상품구성</h2>
+<table border='1'>
+<caption>선물용과 가정용 상품 구성</caption>
+<thead>
+<tr><th>용도</th><th>중량</th><th>개수</th><th>가격</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan='2'>선물용</td>
+<td style='text-align: center'>3000kg</td><td>11~16과</td><td>35,000원</td>
+</tr>
+<tr>
+<!--<td>선물용</td>-->
+<td>5kg</td><td>18~26과</td><td>52,000원</td></tr>
+<tr><td rowspan='2'>가정용</td><td>3kg</td><td>11~16과</td><td>30,000원</td></tr>
+<tr>
+<!--<td>가정용</td>-->
+<td>5kg</td><td>18~26과</td><td>47,000원</td>
+</tr>
+<tr><td colspan='4'>배송은 내일부터</td></tr>
+</tbody>
+<tfoot>
+<table border='1'>
+<caption>로그인표</caption>
+<tr><td>아이디 입력</td><td>sba</td><td rowspan='2'>로그인버튼</td></tr>
+<tr><td>괄호 입력</td><td>sba</td></tr>
+</table>
+
+<table border='2'>
+<caption>로그인표</caption>
+<tr><td>아이디 입력</td><td>sba</td></tr>
+<tr><td>괄호 입력</td><td>sba</td></tr>
+<tr><td colspan='2'>로그인버튼</td></tr>
+</table>
+<ol>
+<li><h1>메일</h1></li>
+<li><a href='https://sports.daum.net/worldsoccer/news/breaking#313636393235373539323730345e2a7c2c232d405177696d7035506c6769'>국대</a></li>
+<li>웹툰</li>
+<li><a href='https://sports.daum.net/worldsoccer'>월드컵</a></li>
+<li><a href='#first'>현재파일의 상단</a></li>
+<li><a href='http://localhost:8080/html/multimedia.html'>현재서버의 multimedia.html</a>
+</ol>
+</body>
+</html>

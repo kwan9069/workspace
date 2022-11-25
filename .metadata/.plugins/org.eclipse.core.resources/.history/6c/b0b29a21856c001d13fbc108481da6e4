@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type='text/css'>
+@import
+ url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+#target{
+font-family:serif,sans-serif,monospace;
+font-size: 2em;
+font-style:italic;
+font-weight:bold;
+font-variant: small-caps;
+text-transform:uppercase;
+color:rgb(255,255,0);
+background-color: #00ffee;
+text-align: center;
+width:500px;
+height:200px;
+line-height:200px;
+}
+#google{
+font-family: 'Noto Sans KR', sans-serif;}
+#sam{
+text-decoration:none;
+text-shadow: 5px 5px 30px red;
+}
+</style></head>
+<body>
+<h1 id='target'>html css javascript</h1>
+<h1 id='google' >제목 2 클라우드 기반 웹 개발 과정</h1>
+<h1><a id='sam' href=''>링크 동작 테스트</a></h1>
+</body>
+</html>
