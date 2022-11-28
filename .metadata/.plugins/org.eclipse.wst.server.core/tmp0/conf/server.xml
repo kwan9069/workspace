@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\sba\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\sba\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\html" path="/html" reloadable="true" source="org.eclipse.jst.jee.server:html"/><Context docBase="C:\sba\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CSS" path="/CSS" reloadable="true" source="org.eclipse.jst.jee.server:CSS"/></Host>
+      <Context docBase="C:\sba\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\sba\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\html" path="/html" reloadable="true" source="org.eclipse.jst.jee.server:html"/><Context docBase="C:\sba\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\CSS" path="/CSS" reloadable="true" source="org.eclipse.jst.jee.server:CSS"/><Context docBase="C:\sba\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\js" path="/js" reloadable="true" source="org.eclipse.jst.jee.server:js"/></Host>
     </Engine>
   </Service>
 </Server>

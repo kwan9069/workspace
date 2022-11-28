@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var a = 100;
+/* 변수 선언 키워드   변수이름  = 값;//변수 선언문  */
+/* 변수 선언 키워드 변수이름=값;  
+ 변수 선언문- 메모리 100 저장하고 a 이름
+ */
+ alert(a);//a이름 메모리저장값 출력
+ document. write('<H3>'+ a+"</h3>");//a 이름 메모리저장값 출력
+ console.log(a);
+ alert(a);
+ var b= 3.14;
+document.write('<H3>'+ b+"</h3>")
+var c='입';
+var d='입력';
+document.write('<H3>'+d+'</h3>');
+var e=true;//논리값형
+document.write('<H3>'+e+'</h3>');
+e= false;
+document.write('<H3>'+e+'</h3>');
+e=10>5;
+document.write('<H3>'+e+'</h3>');
+
+var f;
+document.write('<H3>'+f+'</h3>');
+var array=[1,2,3,4,5];
+
+document.write('<h3>'+array[3]+'</h3>');
+
+var array=new Array(5);
+
+document.write('<h3>'+array[3]+'</h3>');
+
+var f_f=100; 
+
+var title= prompt('과정명을 입력하세요');   //문자열
+document.write('<H3>'+title+'</h3>');
+
+var delete_Result= confirm('삭제하시겠습니까?')  //논리값리턴
+document.write('<h3>'+delete_Result+'</h3>')
+
+document.write('<h3>'+typeof(delete_Result)+'</h3>')
+
+document.write('<h3>'+typeof(title)+'</h3>')
+
+</script>
+
+</body>
+</html>

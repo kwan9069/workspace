@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type='text/javascript'>
+
+//변수 hoisting 
+
+var test1='test1수정';
+document.write('<h3>'+test1+'</h3>')
+
+var test1='test1최초'; //문자열형
+document.write('<h3>'+test1+'</h3>');
+
+//////////////////////////////////////
+
+let test2='test2최초' ;
+document.write('<h3>'+test2+'</h3>');
+
+test2='test2수정' ;
+document.write('<h3>'+test2+'</h3>');
+
+//////////////////////////////////////
+
+const test3='test3최초(상수))';
+document.write('<h3>'+test3+'</h3>');
+
+test3='test3수정'
+document.wrtie('<h3>'+test3+'</h3>')
+
+</script>
+</body>
+</html>
