@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+let su1=prompt('숫자를 입력하세요?')
+let su2=prompt('숫자를 입력하세요?')
+let cal=prompt('사칙연산(+,-,*,/)중 1개 입력 가능')
+if(window.isNaN(su1)||window.isNaN(su2)){
+	document.write('<h3>'+'숫자형태가 아닙니다'+'</h3>')
+}
+else{
+
+/* if (cal=='+'){
+	document.write(num+cal+num2 +'=' +window.parseInt(num)+window.parseInt(num2))}
+else if (cal=='-'){
+	document.write(num+cal+num2 +'=' +window.parseInt(num)-window.parseInt(num2))}	
+else if (cal=='*'){
+	document.write(num+cal+num2 +'=' +window.parseInt(num)*window.parseInt(num2))}	
+else{
+	document.write(num+cal+num2 +'=' +window.parseInt(num)/window.parseInt(num2))} */
+let num1=Number(su1);
+let num2=Number(su2);
+let result;
+if (cal=='+'){
+	result=num1+num2;
+}
+else if (cal=='-'){
+	result=num1-num2;
+}
+else if (cal=='*'){
+	result=num1*num2;
+}
+else if (cal=='/'){
+	if(num2!=0){
+	result=num1/num2;
+}
+	else{
+		result='0으로 나누기 불가';
+	}
+	}
+document.write('<h3>'+num1+cal+num2+'='+result+'</h3>')
+}
+
+
+</script>
+</body>
+</html>

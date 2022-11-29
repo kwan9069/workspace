@@ -13,7 +13,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="parseInt"/>
 		<list key="findhistory">
+			<item value="parseint"/>
+			<item value="typeof"/>
 		</list>
 		<list key="replacehistory">
 		</list>

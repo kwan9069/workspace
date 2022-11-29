@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var name='전역변수';
+var h3='<h3>';
+var h33='</h3>';
+var name2='전역변수';//hoisting
+
+function f1(){
+	var name='지역변수'; 
+	name2 ='전역변수수정';
+	document.write(h3+name+':'+name2+h33);
+}
+f1();
+document.write(h3+name2+h33);
+//화살표함수
+let f2= (a) => {return a*a;} //1. 변수처럼 사용
+document.write(h3+(f2)(10)+h33);
+document.write(h3+(a => a*a)(5)+h33); //즉각실행
+a=> a*a;
+
+
+
+</script>
+</body>
+</html>

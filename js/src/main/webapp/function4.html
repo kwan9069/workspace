@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+#clock{background-color:aqua;
+margin:auto;
+text-align:center;}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+var h3='<h3>'
+var h33='</h3>'
+function f1() {document.write(h3+new Date().toLocaleTimeString()+h33)};
+//alert(new Date().toLocaleTimeString())};
+//f1();
+//--------------------------------------------------------------
+
+/*window.setTimeout(f1,5000);
+window.setTimeout(()=>{document.write(h3+new Date().toLocaleTimeString()+h33);},3000);*/
+//--------------------------------------------------------------
+/*window.setTimeout(()=>{
+	document.write(h3+newDate().toLocaleTimeString+h33);},3000);*/
+//--------------------------------------------------------------	
+//1초마다 시간 표시
+var timer=window.setInterval(()=>{
+	//id clock 태그 조회해서
+	document.getElementById('clock').innerHTML= h3+ new Date().toLocaleTimeString()+h33
+},1000);
+//1초마다 시간 표시	
+/* var timer=window.setInterval(()=>{
+	document.write(h3+new Date().toLocaleTimeString()+h33)},1000); */
+//10초지나면 중단
+window.setTimeout(()=>{window.clearInterval(timer)},10000);
+/* window.clearInterval(timer) */
+//10초 동안=10초 지나면 중지
+
+//f1();
+//window 문서 로딩 완료 시점이 되면
+window.onload=()=>{alert(document.getElementById('clock').innerHTML);}
+
+</script>
+<div id='clock'>
+여기에 시간을 표시할 예정입니다.
+</div>
+</body>
+</html>

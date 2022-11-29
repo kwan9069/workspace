@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+//변수종류- 숫자/ 문자/ 논리값/ undefined
+//함수도 변수처럼 취급 문법
+//익명함수 정의-즉각 실행
+(function (){
+	document.write('<h3>무명함수 실행중</h3>');
+})(); //함수 이름 X=그 자리에서 바로 실행
+//함수도 변수처럼 취급 문법
+let f2= function(){
+	document.write('<h3>무명함수(변수로 취급) 실행중</h3>')
+	return 0;
+}
+f2();
+let f3=f2;
+f3();
+alert(f2);//함수내용 출력
+alert(f2());//함수실행리턴값 출력
+</script>
+</body>
+</html>

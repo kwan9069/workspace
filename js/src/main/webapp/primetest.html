@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+window.onload=function(){
+document.getElementById('primebtn').onclick=function(){
+	var num=document.getElementById('su').value;
+	if(window.parseInt(num)==2){
+		document.getElementById('result').innerHTML='소수입니다.'
+	}
+	else if(window.parseInt(num)==1){
+		document.getElementById('result').innerHTML='소수가 아닙니다.'
+	}
+	else{
+	for (var i=2;i<num;i++) {
+		 if(window.parseInt(num)%window.parseInt(i)===0){ 
+			document.getElementById('result').innerHTML='소수가 아닙니다.';
+			break}		
+		else {
+			document.getElementById('result').innerHTML='소수입니다.'
+		}
+		}}}};
+	/* 	else{
+			;
+		}
+	}}; */
+
+	
+/* var num=window.onload */
+		/*document.getElementById('primebtn').onclick=function()
+		{document.getElementById('su').innerHTML}}*/
+		/*num= function(){document.getElementById('primebtn').onclick=function()
+		{document.getElementById('su').innerHTML*/
+		
+</script>
+</head>
+<body>
+<label for ='su'>숫자입력 </label><input type=text placeholder='2-100정수'id='su'>
+<input type=button id='primebtn' value='소수판단하기'>
+<div id='result'> 여기에 소수 판단 결과를 출력합니다. </div>
+</body>
+</html>
