@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+//객체(=변수 일종)=메소드(함수)+프로퍼티(=변수)
+//1.
+var emp1={
+		id:100, 
+		name:'홍길동',
+		salary: 45000.00,
+		calcSalary : function(bonus){
+			this.salary=this.salary+bonus;
+			return this.salary;
+		}
+	
+};
+var emp2={
+		id:200, 
+		name:'이철수',
+		salary: 55000.00,
+		calcSalary : function(bonus){
+			this.salary=this.salary+bonus;
+			return this.salary;
+		},
+		study :  function(){
+			document.write('<h3>석박과정</h3>')
+		}
+		}
+		
+document.write('<h3>'+emp2.name+'</h3>');
+document.write('<h3>보너스 받기 전 급여 '+emp2.salary+'</h3>');
+document.write('<h3>실적(마이너스) 급여 '+emp2.calcSalary(-5000)+'</h3>');
+emp2.study();
+
+//2.
+</script>
+</body>
+</html>

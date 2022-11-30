@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var b=[1,2,3];
+var c=['java',true,[1,2,3],3.14];
+var a2=new Array(1);
+var a=[];
+a[0]=10;
+a[1]=20;
+a[2]=30;
+a[3]=40;
+document.write('<h3>'+a.length+'</h3>');
+
+for(var i=0;i <a.length;i++){
+	document.write('<h3>'+i+'번째 인덱스의 값='+a[i]+'</h3>');
+}
+
+for(index in a){
+	document.write('<h3>'+index+'번째 인덱스의 값='+a[index]+'</h3>');
+}
+document.write('<h3>'+a.join('<br>')+'</h3>');
+
+//ecmascript6
+a.forEach(function(data){
+	document.write('<h3>'+data+'</h3>');
+})
+
+var b=[1,2,3];
+b.push(4);//배열 끝 추가 b.pop()
+b.push(5);
+b.unshift(0); //배열 처음에 추가 b.shift()-첫번째 데이터 없애라
+document.write('<h3>'+b.join(' : ')+'</h3>');
+document.write('<h3>'+(b instanceof Array)+'</h3>');
+document.write('<h3>'+typeof b+'</h3>');
+document.write('<h3>'+(b.constructor==Array)+'</h3>');
+</script>
+</body>
+</html>
