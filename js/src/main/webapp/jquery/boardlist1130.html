@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+table, td, th {
+	border : 3px solid black;	
+	border-collapse: collapse;
+	}
+
+</style>
+
+<script>
+window.onload = function(){
+	
+	
+	function Board(seq, title, contents){
+		//객체생성시 변수로 저장
+		//this.seq = seq;
+		//...
+		this.seq = seq;
+		this.title = title;
+		this.contents = contents;
+		this.time = new Date();
+	}
+	
+	var boardlist = [];
+	
+	//저장하기
+	//seq, title, contents, time 저장
+	//5개 초과시 저장안함.
+	document.getElementById("save").onclick = function(){
+		if(boardlist.length == 5){
+			document.getElementById("saveresult").innerHTML = "5개 이상 저장하지 마세요.";
+			return;
+		}
+		
+		var seqTemp = document.getElementById("seq").value;
+		var titleTemp = document.getElementById("title").value;
+		var contentsTemp = document.getElementById("contents").value;
+		
+		console.log(seqTemp + titleTemp + contentsTemp + boardlist.length);
+		
+		boardlist.push(new Board(seqTemp, titleTemp, contentsTemp));
+		//boardlist[boardlist.length] = [seqTemp, titleTemp, contentsTemp];
+		
+		console.log(boardlist);
+		//console.log(boardlist[0][0] + boardlist[0][1] + boardlist[0][2]);
+		document.getElementById("saveresult").innerHTML = boardlist.length + "개 저장했습니다.";
+	}
+	
+	
+	//출력하기
+	//boardlist에 저장된 값 호출 length 사용해서 #list에
+	document.getElementById("output").onclick = function(){
+		document.getElementById("list").innerHTML = "<table><tr><th>번호</th><th>제목</th><th>내용</th><th>시간</th></tr>";
+		
+		//console.log(boardlist[0].seq);
+
+		//console.log(boardlist[0].title);
+		for(var i = 0; i < boardlist.length; i++){
+			document.getElementById("list").innerHTML += "<tr>";
+			document.getElementById("list").innerHTML += "<td>" + boardlist[i].seq + "</td>";
+			document.getElementById("list").innerHTML += "<td>" + boardlist[i].title + "</td>";
+			document.getElementById("list").innerHTML += "<td>" + boardlist[i].contents + "</td>";
+			document.getElementById("list").innerHTML += "<td>" + boardlist[i].time + "</td>";
+			document.getElementById("list").innerHTML += "</tr>";
+		}
+		
+		document.getElementById("list").innerHTML += "</table>";
+	}
+}
+
+// 1. 게시물 저장 버튼 클릭시
+// 1-1. save 버튼 클릭하면 seq, title, contents 입력값 가져온다.
+// ex) 1 제목1 내용1 게시물저장 버튼 클릭하면
+// 1-2. board 생성자 함수 정의해서 
+// 1-3. 1-1 입력값 board객체 생성
+// 1-4. boardlist 배열에 저장하고
+// 1-5. saveresult 태그에 게시물 1개 저장되었습니다 출력
+// 1-6. 단, 6번째부터는 saveresult 태그에 게시물 추가 저장 불가능합니다. 리스트를 출력하세요 출력
+
+
+
+
+// 2. 게시물조회 버튼 클릭시
+// list 태그에 5개 게시물 리스트 출력
+// ex)
+// 1: 제목1: 내용1: 2022. 11. 30. 오후 5:21:15
+// 2: 제목2: 내용2: 2022. 11. 30. 오후 5:21:15
+// 3: 제목3: 내용3: 2022. 11. 30. 오후 5:21:15
+// 4: 제목4: 내용4: 2022. 11. 30. 오후 5:21:15
+// 5: 제목5: 내용5: 2022. 11. 30. 오후 5:21:15
+
+
+
+
+</script>
+</head>
+<body>
+	번호:<input type=text id="seq">
+	제목:<input type=text id="title">
+	내용:<input type=text id="contents">
+	<br>
+	<input type="button" id="save" value="게시물저장">
+	
+	<div id="saveresult"></div>
+	
+	<br><br>
+	<input type=button id="output" value="게시물조회">
+	<div id="list"> 5개 게시물 입력 결과 출력 </div>
+​
+</body>
+</html>
