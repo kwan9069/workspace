@@ -15,6 +15,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="parseInt"/>
 		<list key="findhistory">
+			<item value="img_array"/>
 			<item value="parseint"/>
 			<item value="typeof"/>
 		</list>

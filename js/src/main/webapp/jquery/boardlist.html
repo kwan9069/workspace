@@ -14,7 +14,55 @@ window.onload=function (){
 	this.contents=contents;	
 	this.date=new Date().toLocaleString();};
 	var boardlist = [];
-	
+	// var boardlist= new Array(5);
+//자바 스크립트와 자바 언어 문법 유사	
+/* function Board(seq,title,contents){
+	this.seq=seq;
+	this.title=title;
+	this.contents=contents;
+	this.time=newDate().toLocalString();
+}
+var boardlist=[];
+
+ window.onload=function(){
+	var save= document.querySelector('#save'); DOM객체 button
+var output= document.querySelector('#output'); DOM 객체 button
+var saveresult=document.querySelector('#saveresult'); div
+var list= document.querySelector('#list'); div
+var seq=document.querySelector('#seq');input
+var title=document.querySelector('#title')input
+var contents=document.querySelector('#contents')input
+var clickcount=0;
+	save.onclick=function(){
+		clickcount++;
+		if (clickcount>5){
+			saveresult.innerHTML='<H3>게시물 추가 저장 불가능합니다. 리스트를 출력하세요 </H3>'
+			return;
+		}// if end
+		//var board1={
+				seq:seq.value, 
+				title:title.value,
+				contents: contents.value,
+				time: newDate().toLocaleString()
+				};//
+		var board1=new Board(seq.value,title.value,contents.value);
+		baordlist.push(board1);
+		saveresult.innerHTML='<H3>게시물 '+clickount+'개 저장되었습니다.</H3>'
+		
+	}
+    
+    
+    output.onclick=function(){ 
+    	list.innerHTML='';
+    	for(var i=b0; i<boardlist.length;i++){
+    		list.innerHTML+=boardlist[i].seq+':'+boardlist[i].title+':'+
+    		boardlist[i].contents+':'+boardlist[i].time+'<br>';
+    		//time==date in my 구현
+    }
+    }
+    
+    }
+    */
 	document.getElementById('save').onclick=function(){
 		if (boardlist.length==5){
 			document.getElementById('saveresult').innerHTML='게시물 추가 저장 불가능합니다. 리스트를 출력하세요';
@@ -30,7 +78,12 @@ window.onload=function (){
 	
 boardlist.push(new Board(tmpseq,tmptitle,tmpcontents));
 document.getElementById('saveresult').innerHTML='게시물 1개 저장되었습니다.'
-console.log(boardlist);}}
+console.log(boardlist);}
+/* 	function(){for
+		
+		
+	} */
+	}
 ;	
 
 

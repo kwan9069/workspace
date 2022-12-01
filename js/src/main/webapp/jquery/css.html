@@ -20,9 +20,9 @@ $('h1:eq(1)').css('color','green'); */
 //alert($('h1').css('color')); //getter.1개만 출력
 //$('h1').each(function(){alert($(this).css('color'));}); //getter
 $('h1').each(function(){
-	//$('#result').append(this.style.color+'<br>');
-	//html($('#result').html()+this.style.color+'<br>');
-	$('#result').text(this.style.color+'<br>')
+	$('#result').append(this.style.color+'<br>');
+	/* $('#result').html($('#result').html()+$(this).css('color')+'<br>'); */
+	//$('#result').text(this.style.color+'<br>')
 	});
 });
 </script>

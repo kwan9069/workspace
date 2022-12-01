@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src='jquery-3.6.1.min.js'></script>
+
+<script>
+$(document).ready(function(){
+	var win;
+	var url='idcheck.html'
+   
+	
+	$('#double').on('click',function(){
+		var id=$('#id').val();
+		var pw=$('#pw').val()
+		var id_list=['java','html','jsp','servlet','script']
+		for(var i=0;i<id_list.length;i++){
+			if(id=id_list[i]){
+				isID=true;
+				break;
+			}
+		}
+		if(isID==true){
+			win=window.open(url,width=600, height=600)
+		}
+		else{
+			win=window.open(url,width=600, height=600)
+		}
+	})
+	
+    
+	$('#close').on('click',function(){
+		win.close
+	})
+	
+	$('#login').on('submit',function(event){
+		var pw=$('#pw').val();
+		var id=$('#id').val();
+		var phone=$('#phone').val();
+		var pw_regex=/^{8-10}#/;
+		var name=/^[ㄱ-ㅎ|가-힣|A-Z|]+$/;
+		var phone=/^010-[0-9]{3,4}[0-9]{4}$/;
+		if(){
+			
+		}
+		})
+		
+	})
+	
+</script>
+</head>
+<body>
+<h1>회원가입 중입니다.</h1>
+<form id='loginform' action='success.jsp'>
+<div id='first'>
+<label for =id'>아이디 입력</label><input type=text id='id'>
+<input type="button" id='double' value='중복확인'>
+<input type="button" id='close' value='새창닫기'>
+</div>
+<div id='result'> </div>
+<label for='pw'>암호 입력</label><input type=password id='pw'><br>
+<label for='name'>이름 입력</label><input type=text id='name'><br>
+<label for='phone'>폰번호 입력</label><input type=text id='phone'><br>
+<input type='submit' id='login' value='가입' action='success.jsp'>
+</form>
+</body>
+</html>

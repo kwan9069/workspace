@@ -1,22 +1,7 @@
 autoProposeDelay=0
-commentBorder=\#99968B | null | null | null | null | null
-commentText=\#99968B | null | null | null | null | null
-declBoder=\#EDE9F6 | null | null | null | null | null
-doctypeExternalId=\#EDE9F6 | null | null | null | null | null
-doctypeExternalPubref=\#EDE9F6 | null | null | null | null | null
-doctypeExtrenalSysref=\#EDE9F6 | null | null | null | null | null
-doctypeName=\#EDE9F6 | null | null | null | null | null
 eclipse.preferences.version=1
-entityReference=\#CC99FF | null | false | null | null | null
 html_content_assist_default_page_sort_order=org.eclipse.wst.html.ui.proposalCategory.htmlTags\u0000org.eclipse.wst.html.ui.proposalCategory.generic\u0000org.eclipse.wst.css.ui.proposalCategory.css\u0000org.eclipse.wst.html.ui.proposalCategory.htmlTemplates\u0000org.eclipse.wst.css.ui.proposalCategory.cssTemplates\u0000
 html_content_assist_display_on_default_page=
 html_content_assist_own_page_sort_order=org.eclipse.wst.html.ui.proposalCategory.htmlTemplates\u0000org.eclipse.wst.css.ui.proposalCategory.cssTemplates\u0000org.eclipse.wst.html.ui.proposalCategory.htmlTags\u0000org.eclipse.wst.css.ui.proposalCategory.css\u0000org.eclipse.wst.html.ui.proposalCategory.generic\u0000
 newFileTemplateName=New HTML File (5)
 org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="html_new" deleted\="false" description\="html 5" enabled\="true" id\="org.eclipse.wst.html.ui.templates.html5" name\="New HTML File (5)">&lt;\!DOCTYPE html&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;\r\n&lt;meta charset\="${encoding}"&gt;\r\n&lt;title&gt;Insert title here&lt;/title&gt;\r\n&lt;script src\='jquery-3.6.1.min.js'&gt;&lt;/script&gt;\r\n\r\n&lt;script&gt;\r\n$$(document).ready(function(){\r\n\t\r\n});\r\n&lt;/script&gt;\r\n&lt;/head&gt;\r\n&lt;body&gt;\r\n${cursor}\r\n&lt;/body&gt;\r\n&lt;/html&gt;</template></templates>
-overriddenByCSS=,commentBorder,commentText,declBoder,doctypeExternalId,doctypeExternalPubref,doctypeExtrenalSysref,doctypeName,entityReference,tagAttributeEquals,tagAttributeName,tagAttributeValue,tagBorder,tagName,xmlContent,
-tagAttributeEquals=\#BCADAD | null | null | null | null | null
-tagAttributeName=\#99B3FF | null | null | null | null | null
-tagAttributeValue=\#E6FF99 | null | null | null | null | null
-tagBorder=\#EDE9F6 | null | false | null | null | null
-tagName=\#EDE9F6 | null | false | null | null | null
-xmlContent=\#BCADAD | null | null | null | null | null

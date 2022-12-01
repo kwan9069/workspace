@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src='jquery-3.6.1.min.js'></script>
+
+<script>
+//btnclick 클릭하면 횟수를 메시지
+$(document).ready(function(){
+	var clickcount=0;
+	$('#btnclick').on('click',function(){
+		clickcount++;
+	$('#clickout').html(clickcount+' 번 클릭하셨습니다.');	
+	});//on click end
+	$('#btnstop').on('click',function(){
+		$('#btnclick').off('click')
+	});
+	$('#btnnotice').one('click',function(){
+		$('#clickout').html('공지사항입니다. 1번만 출력합니다.')
+	});
+	$('#keyin').on('keypress',function(e){
+		/*if(e.keyCode>=48 && e.keyCode<=57){
+			$('#keyout').html(e.keyCode)};
+			$('#keyout').css('background-color','red')
+			}
+	else{
+		$('#keyout').html('부적합')
+		$('#keyout').css('background-color','red')
+	}		*/
+	//3. 폰번호 010시작 국번 3,4자리번호 전화번호 4자리
+	var regex= /^010-[0-9]{3,4}[0-9]{4}$/;
+	var keyin= $(this).val()
+	//var regex=/^[가-힣]{5,10}$/;//정규표현식
+	if(keyin.match(regex)!=null) { /*매치-입력값 리턴, 아니면 null */
+	$('#keyout').html(keyin.match(regex))		
+	$('#keyout').css('background-color','green');
+	}
+	else{
+	$('#keyout').css('background-color','red');	
+	}
+});
+});
+	/*키입력내용출력
+	$('#keyin').on('keypress',function(){;
+	$('#keyout').html($('#keyin').val() );
+	0-9 숫자 출력
+	*/
+
+</script>
+</head>
+<body>
+<input type=button value='클릭버튼' id='btnclick'>
+<input type=button value='중단버튼' id='btnstop'>
+<input type=button value='공지사항버튼' id='btnnotice'>
+<div id='clickout'>
+
+</div>
+
+<input type=text id='keyin'>
+<div id='keyout'></div>
+</body>
+</html>
