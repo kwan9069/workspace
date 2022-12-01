@@ -34,15 +34,25 @@ $(document).ready(function(){
 		win.close
 	})
 	
-	$('#login').on('submit',function(event){
+	$('#loginform').on('submit',function(event){
 		var pw=$('#pw').val();
-		var id=$('#id').val();
-		var phone=$('#phone').val();
-		var pw_regex=/^{8-10}#/;
+		var id=$('#name').val();
+		var phonenum=$('#phone').val();
+		var pw_regex= /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,10}$/;
 		var name=/^[ㄱ-ㅎ|가-힣|A-Z|]+$/;
-		var phone=/^010-[0-9]{3,4}[0-9]{4}$/;
-		if(){
-			
+		var phone=/^\d{3}-\d{3,4}-\d{4}$/;
+		var isID;
+		if(pw_regex.test(pw)==false){
+			alert('암호 부적합');
+			event.preventDefault();
+		}
+		if(name.test(id)==false){
+			alert('이름 부적합')
+			event.preventDefault();
+		}
+		if(phone.test(phonenum)==false){
+			alert('폰번호 부적합')
+			event.preventDefault();
 		}
 		})
 		
@@ -62,7 +72,7 @@ $(document).ready(function(){
 <label for='pw'>암호 입력</label><input type=password id='pw'><br>
 <label for='name'>이름 입력</label><input type=text id='name'><br>
 <label for='phone'>폰번호 입력</label><input type=text id='phone'><br>
-<input type='submit' id='login' value='가입' action='success.jsp'>
+<input type='submit' id='login' value='가입'>
 </form>
 </body>
 </html>

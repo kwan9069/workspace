@@ -3,11 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<!-- 모두 제목 내용 작성자 중 한개 이상 선택하고 검색어를 입력한 다음에 검색 버튼 클릭하면 search.jsp로 전송된다
-    1>이 때 모두를 선택시 제목, 내용, 작성자 자동으로 모두 선택되어야 하고
-    모두 선택 해제시 제목, 내용, 작성자 자동으로 모두 선택해제되도록 구현한다
-    2> 만약 제목 내용 작성자 가운데 아무 것도 선택되지 않거나 검색어 입력되지 않으면 search.jsp로 전송되지 않도록 구현한다
- -->
+<script src="../jquery/jquery-3.6.1.min.js"></script>
+<script>
+$(document).ready(()=>{
+	$('#searchform').on('submit',function(event){
+			//id - '홍길동','이수철','박보검' 아니여야 한다.			
+			//pw 는 5자리 숫자 입력해야 한다.
+			var all = $('#all').val();
+			var pw = $('#pw').val();
+			
+	if()
+		});
+});	
+</script>
 </head>
 <body>
 <h1> 검색 대상과 검색어를 입력하세요.</h1>
