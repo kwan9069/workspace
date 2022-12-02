@@ -7,14 +7,32 @@
 
 <script>
 $(document).ready(function(){
-var parent_val = opener.$("#id").val();
-var son= $("#son").val(parent_val);
-	
+	var id_list=['java','html','script','jsp','servlet'];
+	var id= opener.$('#id').val()
+	$('#result').html(id);
+	var isCheck;
+	for(var i=0;i <id_list.length; i++){
+		if(id==id_list[i]){
+			isCheck='는 사용 불가능합니다.';
+			break;
+		}
+		else{
+			isCheck='는 사용 가능합니다.';
+		}
+	}
+	$('#result').append(isCheck);
+	$('#myclose').on('click',function(){
+	opener.$('#result').html($('#result').html());
+		window.close();			
+	})
+/* var son= $("#son").val(parent_val);
+win.document.write("<p>"+ son+'는 사용 불가능 합니다.'+"</p>"); // 내 시도*/
 });
-//win.document.write("<p>"+ id+'는 사용 불가능 합니다.'+"</p>");
+
 </script>
 </head>
 <body>
-<p id='son'></p>
+<div id=result>중복검사여부</div>
+<input type=button value='창닫기' id='myclose'>
 </body>
 </html>

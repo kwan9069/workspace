@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src='jquery-3.6.1.min.js'></script>
+
+<script>
+$(document).ready(function(){
+	var newwindow;
+	$('#idcheck').on('click',function(){
+	 newwindow=window.open('idcheck.html','','top=100,left=300,width=300,height=300')
+	});
+		$('#childclose').on('click',function(){
+			$('#result').html(newwindow.$('#result').html());
+			newwindow.close();			
+		});
+});
+</script>
+</head>
+<body>
+<h1>회원가입 중입니다.</h1>
+<form id='loginform' action='success.jsp'>
+	아이디 입력:<input type=text id='id'>
+	<input type="button" id='idcheck' value='중복확인'>
+	<input type="button" id='childclose' value='새창닫기'>
+	<div id='result'></div>
+	암호 입력: <input type=password id='pw'><br>
+	이름 입력: <input type=text id='name'><br>
+	폰번호 입력: <input type=tel id='phone'><br>
+	<input type='submit' value='회원가입'>
+</form>
+</body>
+</html>
