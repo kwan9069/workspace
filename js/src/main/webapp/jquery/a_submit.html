@@ -12,11 +12,11 @@
 			ev.preventDefault();
 		});//on
 		$('#loginform').on('submit',function(event){
-			//id - '홍동길','김수철','보박검' 아니여야 한다.			
+			//id - '홍길동','이수철','박보검' 아니여야 한다.			
 			//pw 는 5자리 숫자 입력해야 한다.
 			var id = $('#id').val();
 			var pw = $('#pw').val();
-			var id_list = ['홍동길','이수철','보박검'];
+			var id_list = ['홍길동','이수철','박보검'];
 			var pw_regex = /^[0-9]{5}$/;
 			
 			var isID;
